@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rota Pet Planalto Paulista - Em breve, uma nova forma de cuidar do seu pet no Planalto Paulista. Cadastre-se na lista de espera.">
+    <title>Rota Pet Planalto Paulista | Cuide e atenda seu pet hoje</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo-link" id="logo-anchor">
+                <img src="imagens/logo.svg" alt="Rota Pet Planalto Paulista Logo" class="logo-img" id="logo-image">
+            </a>
+            
+            <nav class="nav" id="main-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="#contato" class="btn btn-primary btn-sm" id="header-cta-button">Lista de Espera</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" aria-controls="main-navigation" aria-expanded="false" id="menu-toggle">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge" id="hero-badge">🐾 Lançamento em Breve</span>
+                <h1 class="hero-title" id="main-title">
+                    Em breve, uma nova forma de <span class="text-gradient">cuidar do seu pet</span>.
+                </h1>
+                <p class="hero-description" id="hero-lead">
+                    Preparamos um serviço premium, altamente personalizado e com cuidadores qualificados bem pertinho de você no Planalto Paulista. Cadastre-se na nossa lista de espera exclusiva e garanta benefícios e descontos especiais no lançamento.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contato" class="btn btn-primary" id="hero-primary-cta">Garantir Minha Vaga</a>
+                    <a href="#sobre" class="btn btn-outline" id="hero-secondary-cta">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="imagens/hero_pet.png" alt="Cão Golden Retriever e gato sorridentes em ambiente aconchegante" class="hero-image" id="hero-display-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="sobre">
+        <div class="container about-container">
+            <div class="about-image-wrapper">
+                <img src="imagens/about_pet.png" alt="Cuidadora profissional passeando alegremente com cães no Planalto Paulista" class="about-image" id="about-display-image">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title" id="about-title">Amor, cuidado e segurança no seu bairro</h2>
+                <p class="about-text" id="about-description-1">
+                    A <strong>Rota Pet Planalto Paulista</strong> nasceu da necessidade de conectar tutores exigentes a profissionais de pet care altamente qualificados, afetuosos e avaliados, que realmente residem e atuam no bairro Planalto Paulista.
+                </p>
+                <p class="about-text" id="about-description-2">
+                    Nossa missão é garantir que a rotina do seu cão ou gato seja mantida com o máximo de carinho, estímulo físico e mental. Seja para um passeio diário dinâmico ou para cuidados em domicílio durante suas viagens, oferecemos um serviço monitorado, seguro e 100% transparente.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">📍</span>
+                        <div class="highlight-info">
+                            <h4 id="highlight-local-title">Monitores no Bairro</h4>
+                            <p id="highlight-local-desc">Atendimento rápido e vizinhos cuidando de vizinhos.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🛡️</span>
+                        <div class="highlight-info">
+                            <h4 id="highlight-security-title">Seguro Veterinário</h4>
+                            <p id="highlight-security-desc">Tranquilidade completa para você e proteção para o seu pet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section bg-light" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center" id="services-title">Nossos Serviços Premium em Breve</h2>
+                <p class="section-subtitle text-center" id="services-subtitle">
+                    Soluções sob medida para o bem-estar, saúde e alegria do seu animal de estimação.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Dog Walker -->
+                <div class="service-card" id="service-dogwalker">
+                    <div class="service-icon-wrapper">
+                        <!-- Paw Icon SVG -->
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                            <path d="M17 14c2.2 0 4-1.8 4-4V8c0-1.1-.9-2-2-2"/>
+                            <path d="M7 14C4.8 14 3 12.2 3 10V8c0-1.1.9-2 2-2"/>
+                            <path d="M12 18v4"/>
+                            <path d="M8 22h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title" id="service-1-title">Dog Walker Premium</h3>
+                    <p class="service-card-text" id="service-1-desc">
+                        Passeios ativos e focados no gasto de energia física e estímulo mental, com rotas seguras e monitoramento por GPS no Planalto Paulista.
+                    </p>
+                </div>
+
+                <!-- Service 2: Pet Sitting -->
+                <div class="service-card" id="service-petsitting">
+                    <div class="service-icon-wrapper">
+                        <!-- House/Cat Icon SVG -->
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title" id="service-2-title">Pet Sitting Dedicado</h3>
+                    <p class="service-card-text" id="service-2-desc">
+                        Alimentação, higienização, brincadeiras e muito carinho no conforto e segurança do lar do próprio pet durante a sua ausência.
+                    </p>
+                </div>
+
+                <!-- Service 3: Táxi Pet -->
+                <div class="service-card" id="service-taxipet">
+                    <div class="service-icon-wrapper">
+                        <!-- Car/Pet Taxi Icon SVG -->
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title" id="service-3-title">Transporte Táxi Pet</h3>
+                    <p class="service-card-text" id="service-3-desc">
+                        Transporte seguro, confortável e climatizado para consultas ao veterinário, banho e tosa, ou qualquer compromisso do seu pet.
+                    </p>
+                </div>
+
+                <!-- Service 4: Hospedagem Familiar -->
+                <div class="service-card" id="service-hospedagem">
+                    <div class="service-icon-wrapper">
+                        <!-- Heart/Bed Icon SVG -->
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title" id="service-4-title">Hospedagem Familiar</h3>
+                    <p class="service-card-text" id="service-4-desc">
+                        O seu melhor amigo hospedado em um ambiente familiar de verdade, acolhedor, livre de gaiolas e com total atenção individualizada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section (Diferenciais) -->
+    <section class="features section" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center" id="features-title">Por que escolher a Rota Pet?</h2>
+                <p class="section-subtitle text-center" id="features-subtitle">
+                    Elevamos o padrão dos cuidados com animais de estimação trazendo tecnologia e carinho humano.
+                </p>
+            </div>
+            
+            <div class="features-container">
+                <div class="feature-item" id="feature-1">
+                    <div class="feature-number">01</div>
+                    <h3 id="feature-1-title">Rastreamento via GPS</h3>
+                    <p id="feature-1-desc">Acompanhe o trajeto exato do passeio do seu cão em tempo real pelo mapa, sabendo onde ele está a cada segundo.</p>
+                </div>
+                
+                <div class="feature-item" id="feature-2">
+                    <div class="feature-number">02</div>
+                    <h3 id="feature-2-title">Diário de Atividades</h3>
+                    <p id="feature-2-desc">Receba fotos, vídeos e um relatório completo sobre o comportamento, hidratação e as necessidades feitas pelo seu pet.</p>
+                </div>
+                
+                <div class="feature-item" id="feature-3">
+                    <div class="feature-number">03</div>
+                    <h3 id="feature-3-title">Cuidadores Certificados</h3>
+                    <p id="feature-3-desc">Todos os profissionais passam por treinamentos práticos de comportamento animal e primeiros socorros veterinários.</p>
+                </div>
+
+                <div class="feature-item" id="feature-4">
+                    <div class="feature-number">04</div>
+                    <h3 id="feature-4-title">Atendimento Exclusivo</h3>
+                    <p id="feature-4-desc">Aqui seu pet não é apenas mais um. Focamos em atendimentos individuais para dar atenção total às particularidades dele.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Registration/Contact Form Section -->
+    <section class="contact section bg-light" id="contato">
+        <div class="container contact-container">
+            <div class="contact-info-side">
+                <h2 class="section-title" id="contact-heading">Garanta benefícios exclusivos no lançamento</h2>
+                <p class="contact-lead" id="contact-lead-text">
+                    Nossas vagas iniciais para atendimento no Planalto Paulista serão limitadas para garantir a qualidade impecável do serviço.
+                </p>
+                <p class="contact-benefit-text" id="contact-benefit-1">
+                    🎁 <strong>Inscreva-se na lista de espera hoje e ganhe:</strong>
+                </p>
+                <ul class="benefit-list">
+                    <li class="benefit-item">🐾 1º Passeio experimental totalmente gratuito.</li>
+                    <li class="benefit-item">🎟️ 15% de desconto nas 3 primeiras mensalidades.</li>
+                    <li class="benefit-item">⭐ Prioridade de agendamento em datas festivas e feriados.</li>
+                </ul>
+            </div>
+            
+            <div class="contact-form-wrapper" id="form-container">
+                <h3 class="form-title" id="form-headline">Cadastre-se na Lista de Espera</h3>
+                <form class="contact-form" action="#" method="POST" id="pre-reg-form">
+                    
+                    <div class="form-group">
+                        <label for="nome" class="form-label">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone" class="form-label">Telefone / WhatsApp *</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(11) 99999-9999" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tipo_pet" class="form-label">Quem é seu melhor amigo? *</label>
+                        <select id="tipo_pet" name="tipo_pet" class="form-select" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="cao">Cão 🐶</option>
+                            <option value="gato">Gato 🐱</option>
+                            <option value="ambos">Cão & Gato 🐶🐱</option>
+                            <option value="outro">Outro pet</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem" class="form-label">Mensagem / Sobre seu Pet (Opcional)</label>
+                        <textarea id="mensagem" name="mensagem" class="form-textarea" rows="4" placeholder="Conte-nos o nome dele, raça, idade ou qualquer detalhe especial que gostaria de compartilhar!"></textarea>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="aceito_termos" name="aceito_termos" required>
+                        <label for="aceito_termos">Aceito receber atualizações sobre o lançamento e novidades da Rota Pet.</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Garantir Vaga</button>
+                    
+                    <!-- Success feedback structure (hidden by default) -->
+                    <div class="form-feedback success" id="form-success-feedback" style="display: none;">
+                        <strong>Sucesso!</strong> Sua vaga na lista de espera está garantida. Em breve entraremos em contato com você.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-column footer-brand-column">
+                <a href="#" class="footer-logo-link" id="footer-logo-anchor">
+                    <img src="imagens/logo.svg" alt="Rota Pet Planalto Paulista Logo" class="footer-logo-img filter-white" id="footer-logo-image">
+                </a>
+                <p class="footer-tagline" id="footer-tagline-text">
+                    Em breve, uma nova forma de cuidar do seu pet no Planalto Paulista. Excelência, segurança e proximidade.
+                </p>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-heading" id="footer-links-heading">Navegação</h4>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Início</a></li>
+                    <li><a href="#sobre" class="footer-link">Sobre</a></li>
+                    <li><a href="#servicos" class="footer-link">Serviços</a></li>
+                    <li><a href="#contato" class="footer-link">Lista de Espera</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-heading" id="footer-contact-heading">Contato</h4>
+                <ul class="footer-list footer-contact-list">
+                    <li>
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:contato@rotapetplanaltopaulista.com" class="footer-link" id="footer-email-link">contato@rotapetplanaltopaulista.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:11992856822" class="footer-link" id="footer-phone-link">(11) 99285-6822</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-heading" id="footer-location-heading">Localização</h4>
+                <p class="footer-location-text" id="footer-location-details">
+                    📍 Planalto Paulista<br>
+                    São Paulo - SP
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright" id="footer-copyright">© 2026 Rota Pet Planalto Paulista. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link" id="footer-privacy-policy">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic (form submission and mobile menu) -->
+    <script>
+        // Form submission behavior
+        const form = document.getElementById('pre-reg-form');
+        const successFeedback = document.getElementById('form-success-feedback');
+        
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Perform basic validation
+                const name = document.getElementById('nome').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('telefone').value.trim();
+                
+                if (name && email && phone) {
+                    // Visual feedback for success
+                    successFeedback.style.display = 'block';
+                    form.reset();
+                    
+                    // Auto-hide feedback after 5 seconds
+                    setTimeout(() => {
+                        successFeedback.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        }
+
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-navigation');
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+                menuToggle.setAttribute('aria-expanded', !expanded);
+                mainNav.classList.toggle('open');
+            });
+        }
+        
+        // Simple Phone Number formatting helper (BR Format)
+        const phoneInput = document.getElementById('telefone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                let val = e.target.value.replace(/\D/g, '');
+                if (val.length > 11) val = val.substring(0, 11);
+                
+                let formatted = '';
+                if (val.length > 0) {
+                    formatted = '(' + val.substring(0, 2);
+                }
+                if (val.length > 2) {
+                    formatted += ') ';
+                    if (val.length > 7) {
+                        formatted += val.substring(2, 7) + '-' + val.substring(7);
+                    } else {
+                        formatted += val.substring(2);
+                    }
+                } else {
+                    formatted = val;
+                }
+                e.target.value = formatted;
+            });
+        }
+    </script>
+</body>
+</html>
