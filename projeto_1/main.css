@@ -204,8 +204,9 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-    height: 48px;
+    height: 64px;
     width: auto;
+    object-fit: contain;
 }
 
 .nav {
@@ -728,8 +729,9 @@ h1, h2, h3, h4 {
 }
 
 .footer-logo-img {
-    height: 48px;
+    height: 64px;
     width: auto;
+    object-fit: contain;
 }
 
 .filter-white {
@@ -882,6 +884,10 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
     :root {
         --header-height: 70px;
+    }
+    
+    .logo-img, .footer-logo-img {
+        height: 52px;
     }
     
     .section {
