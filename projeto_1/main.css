@@ -24,7 +24,7 @@
     
     /* Layout */
     --container-width: 1280px; /* Limitado a 1280px conforme diretrizes EBAC */
-    --header-height: 80px;
+    --header-height: 90px;
     --border-radius-sm: 8px;
     --border-radius-md: 16px;
     --border-radius-lg: 24px;
@@ -204,9 +204,12 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-    height: 64px;
+    height: 75px;
     width: auto;
     object-fit: contain;
+    transform: scale(1.85);
+    transform-origin: left center;
+    margin-right: 50px;
 }
 
 .nav {
@@ -729,9 +732,12 @@ h1, h2, h3, h4 {
 }
 
 .footer-logo-img {
-    height: 64px;
+    height: 85px;
     width: auto;
     object-fit: contain;
+    transform: scale(1.85);
+    transform-origin: left center;
+    margin-bottom: 25px;
 }
 
 .filter-white {
@@ -886,8 +892,16 @@ h1, h2, h3, h4 {
         --header-height: 70px;
     }
     
-    .logo-img, .footer-logo-img {
-        height: 52px;
+    .logo-img {
+        height: 48px;
+        transform: scale(1.35);
+        margin-right: 15px;
+    }
+    
+    .footer-logo-img {
+        height: 60px;
+        transform: scale(1.4);
+        margin-bottom: 15px;
     }
     
     .section {
